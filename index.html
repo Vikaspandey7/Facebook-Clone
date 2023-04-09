@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <i class="fa-brands fa-facebook"></i>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87ee4c319b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- first we will create a navigation for logo, icon, searchbox and user profile -->
+    <nav>
+        <!-- left side --- logo, some icon
+        right side --- searchbox and user icon -->
+        <div class="nav-left">
+            <img src="imag/logo.png" class="logo">
+            <!-- we need to add alist of icon -->
+            <ul>
+                <li><img src="imag/notification.png"></li>
+                <li><img src="imag/inbox.png"></li>
+                <li><img src="imag/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <!-- now we are create searchbox with image-->
+            <div class="search-box">
+                <img src="imag/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" 
+            onclick="settingsMenuToggle()">
+                <!-- here online is also added as online, to show user is online -->
+                <img src="imag/profile-pic.png">
+            </div>
+
+        </div>
+        <!-----------------setting menu-------------------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="imag/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="imag/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-link">
+                    <img src="imag/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="imag/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="imag/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="imag/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="imag/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="imag/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="imag/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="imag/arrow.png" width="10px"></a>
+                </div>
+
+            
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-----------------left-siderbar-------------------------->
+        <div class="left-siderbar">
+            <div class="imp-links">
+                <a href="#"><img src="imag/news.png">Latest News</a>
+                <a href="#"><img src="imag/friends.png">Friends</a>
+                <a href="#"><img src="imag/group.png">Groups</a>
+                <a href="#"><img src="imag/marketplace.png">Market Place</a>
+                <a href="#"><img src="imag/watch.png">Watch</a>
+                <a href="">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcut</p>
+                <a href="#"><img src="imag/shortcut-1.png">Salesforce developer</a>
+                <a href="#"><img src="imag/shortcut-2.png">Web developer</a>
+                <a href="#"><img src="imag/shortcut-3.png">Web designer</a>
+                <a href="#"><img src="imag/shortcut-4.png"> Full Stack developer</a>
+            </div>
+        </div>
+        <!-----------------main-content-------------------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="imag/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="imag/member-1.png">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="imag/member-2.png">
+                    <p>Samoson</p>
+                </div>
+                <div class="story story4">
+                    <img src="imag/member-3.png">
+                    <p>John</p>
+                </div>
+                <div class="story story5">
+                    <img src="imag/member-4.png">
+                    <p>Post jackson</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="imag/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind John"></textarea>
+
+                    <div class="add-post-link">
+                        <a href="#"><img src="imag/live-video.png">Live Video</a>
+                        <a href="#"><img src="imag/photo.png">Photo/Video</a>
+                        <a href="#"><img src="imag/feeling.png">Felling Activities</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="imag/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>April 17 2023, 17:00</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"></p>Subscribe <span> @Vikas Pandey </span>to learn CSS for Web Developemrnt <a
+                    href="#">#Me</a>
+                <a href="#">#YouTubeChannel</a>
+                </p> <br>
+                <img src="imag/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="imag/like-blue.png" alt="">186</div>
+                        <div><img src="imag/comments.png" alt="">46</div>
+                        <div><img src="imag/share.png" alt="">18</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="imag/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="imag/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>March 17 2023, 17:00</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"></p>Subscribe <span> @Vikas Pandey </span>You're so close to using your first Font
+                Awesome Kit and there's a Font Awesome account waiting just for you. We just need you to confirm your
+                email address to finish setting you up! We promise, it'll just take a sec. <a href="#">#Me</a>
+                <a href="#">#YouTubeChannel</a>
+                </p> <br>
+                <img src="imag/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="imag/like.png" alt="">18k</div>
+                        <div><img src="imag/comments.png" alt="">460</div>
+                        <div><img src="imag/share.png" alt="">108</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="imag/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="imag/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Februaury 17 2023, 17:00</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"></p>Subscribe <span> @Vikas Pandey </span>Dear Customer,
+
+                Beware of fake offers and fraudulent sites. Flipkart’s authorised representatives will never call you to
+                demand money or ask for your password/PIN/CVV. Your bank account details may be requested only in case
+                any amount is due to you based on your recent order(s). <a href="#">#Fraud</a>
+                <a href="#">#Instagarm</a>
+                </p> <br>
+                <img src="imag/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="imag/like-blue.png" alt="">196k</div>
+                        <div><img src="imag/comments.png" alt="">46k</div>
+                        <div><img src="imag/share.png" alt="">1008</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="imag/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="imag/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Februaury 17 2023, 17:00</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"></p>Subscribe <span> @Vikas Pandey </span>Dear Customer,Flow is a powerful
+                automation tool for businesses that enables the collection, creation, updating, editing, and deletion of
+                Salesforce data while executing logic and guiding users through data collection and updates. <a
+                    href="#">#Admin</a>
+                <a href="#">#SalesforceAdmin</a>
+                </p> <br>
+                <img src="imag/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="imag/like.png" alt="">16k</div>
+                        <div><img src="imag/comments.png" alt="">4k</div>
+                        <div><img src="imag/share.png" alt="">100</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="imag/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="imag/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>April 17 2023, 17:00</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"></p>Subscribe <span> @Vikas Pandey </span>When you select a flow type and the
+                "Free-Form" option is enabled, you will see a canvas for designing your flow in the center of the
+                screen. On the left-hand side of the screen, under the "Elements" tab, you will find three categories of
+                elements<a href="#">#Admin</a>
+                <a href="#">#SalesforceAdmin</a>
+                </p> <br>
+                <img src="imag/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="imag/like.png" alt="">27k</div>
+                        <div><img src="imag/comments.png" alt="">2k</div>
+                        <div><img src="imag/share.png" alt="">190</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="imag/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-m">Load More</button>
+        </div>
+        <!-----------------right-siderbar-------------------------->
+        <div class="right-siderbar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Events</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Wilson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>SF Dev Events</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Wilson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <!-- /* These is to add adverstiment in right side og page */ -->
+                <h4>Advertisment</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="imag/advertisement.png" class="slidebar-ads">
+
+            <div class="sidebar-title">
+                <!-- /* These is to add various user icon in right side og page */ -->
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="imag/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="imag/member-2.png">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="imag/member-3.png"> </i>
+                </div>
+                <p>Samona Rosa</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 - Facebook Clone </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
